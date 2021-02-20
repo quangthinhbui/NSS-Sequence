@@ -1,5 +1,4 @@
-# NSS-Sequence
-Python Package for Sequence of Neutrosophic Soft Sets
+# Python Package for Sequence of Neutrosophic Soft Sets
 
 Authors: Quang-Thinh BUI, My-Phuong NGO, and Bay Vo
 
