@@ -1,5 +1,5 @@
 # Python Package for Sequence of Neutrosophic Soft Sets
-Authors: Quang-Thinh BUI, My-Phuong NGO, and Bay Vo
+Authors: Quang-Thinh Bui, My-Phuong Ngo, and Bay Vo
 
 Version: Command Line v.1.0
 
