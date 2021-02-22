@@ -7,4 +7,5 @@ Paper: "The Sequence of Neutrosophic Soft Sets and Its Decision-Making Problem i
 
 1. Neutrosophic Soft Set Implements
 2. Time Neutrosophic Soft Set Implements
-3. 
+3. Sequence of Neutrosophic Soft Sets Implements
+4. tNS-set vs NSS-sequence Implements
