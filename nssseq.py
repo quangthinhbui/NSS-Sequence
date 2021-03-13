@@ -75,41 +75,56 @@ def issubnssseq(m,a,b):
 ##############################
 # Operations on NSS-sequences
 ##############################
+def create(m):
+    temp = []
+    for i in range(m[0]):
+        t1 = []
+        for j in range(m[1]):
+            t2 = []
+            for k in range(m[2]):
+                t2.append(np.array([0,0,0]))
+            t1.append(t2)
+        temp.append(t1)
+    return np.array(temp)
+#########
 def complement(m,a):
+    temp = create(m) + a
     for i in range(m[0]):
         for j in range(m[1]):
             for k in range(m[2]):
-                t = a[i][j][k][0]
-                a[i][j][k][0] = a[i][j][k][2]
-                a[i][j][k][1] = 1 - a[i][j][k][1]
-                a[i][j][k][2] = t
-    return a
+                temp[i][j][k][0] = a[i][j][k][2]
+                temp[i][j][k][1] = 1 - a[i][j][k][1]
+                temp[i][j][k][2] = a[i][j][k][0]
+    return temp
 #########
 def intersection(m,a,b):
+    temp = create(m) + a
     for i in range(m[0]):
         for j in range(m[1]):
             for k in range(m[2]):
-                a[i][j][k][0] = min(a[i][j][k][0],b[i][j][k][0])
-                a[i][j][k][1] = min(a[i][j][k][1],b[i][j][k][1])
-                a[i][j][k][2] = max(a[i][j][k][2],b[i][j][k][2])
-    return a  
+                temp[i][j][k][0] = min(a[i][j][k][0],b[i][j][k][0])
+                temp[i][j][k][1] = min(a[i][j][k][1],b[i][j][k][1])
+                temp[i][j][k][2] = max(a[i][j][k][2],b[i][j][k][2])
+    return temp
 #########
 def union(m,a,b):
+    temp = create(m) + a
     for i in range(m[0]):
         for j in range(m[1]):
             for k in range(m[2]):
-                a[i][j][k][0] = max(a[i][j][k][0],b[i][j][k][0])
-                a[i][j][k][1] = max(a[i][j][k][1],b[i][j][k][1])
-                a[i][j][k][2] = min(a[i][j][k][2],b[i][j][k][2])
-    return a  
+                temp[i][j][k][0] = max(a[i][j][k][0],b[i][j][k][0])
+                temp[i][j][k][1] = max(a[i][j][k][1],b[i][j][k][1])
+                temp[i][j][k][2] = min(a[i][j][k][2],b[i][j][k][2])
+    return temp
 #########
 def difference(m,a,b):
+    temp = create(m) + a
     for i in range(m[0]):
         for j in range(m[1]):
             for k in range(m[2]):
-                a[i][j][k][0] = max(a[i][j][k][0],b[i][j][k][2])
-                a[i][j][k][1] = max(a[i][j][k][1],1-b[i][j][k][1])
-                a[i][j][k][2] = min(a[i][j][k][2],b[i][j][k][0])
+                temp[i][j][k][0] = max(a[i][j][k][0],b[i][j][k][2])
+                temp[i][j][k][1] = max(a[i][j][k][1],1-b[i][j][k][1])
+                temp[i][j][k][2] = min(a[i][j][k][2],b[i][j][k][0])
     return a  
 ##############################
 # Distance on NSS-Sequences
