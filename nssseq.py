@@ -118,14 +118,7 @@ def union(m,a,b):
     return temp
 #########
 def difference(m,a,b):
-    temp = create(m) + a
-    for i in range(m[0]):
-        for j in range(m[1]):
-            for k in range(m[2]):
-                temp[i][j][k][0] = max(a[i][j][k][0],b[i][j][k][2])
-                temp[i][j][k][1] = max(a[i][j][k][1],1-b[i][j][k][1])
-                temp[i][j][k][2] = min(a[i][j][k][2],b[i][j][k][0])
-    return a  
+    return intersection(m,a,complement(m,b))
 ##############################
 # Distance on NSS-Sequences
 ##############################
