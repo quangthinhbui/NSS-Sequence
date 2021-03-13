@@ -5,7 +5,6 @@ Version: Command Line v.1.0
 
 Paper: "The Sequence of Neutrosophic Soft Sets and Its Decision-Making Problem in Medical Diagnosis" by Quang-Thinh Bui, My-Phuong Ngo, Bay Vo
 
-1. Neutrosophic Soft Set Implements
-2. Time Neutrosophic Soft Set Implements
-3. Sequence of Neutrosophic Soft Sets Implements
-4. tNS-set vs NSS-sequence Implements
+1. Sequence of NS-Set Implements
+2. Maji Algorithm Implements
+3. tNS-Set vs NSS-Sequence Implements
