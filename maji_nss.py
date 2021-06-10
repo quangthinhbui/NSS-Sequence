@@ -5,9 +5,10 @@ import numpy as np
 def about():
     print("=====================================================")
     print("Python Package for Sequence of Neutrosophic Soft Sets")
-    print("Authors: Quang-Thinh Bui, My-Phuong Ngo, and Bay Vo")
+    print("Authors: Quang-Thinh Bui, My-Phuong Ngo, Vaclav Snasel,")
+    print("         Witold Pedrycz, and Bay Vo")
     print("Version: Command Line v.1.0")
-    print("Paper: The Sequence of Neutrosophic Soft Sets and Its")
+    print("Paper: The Sequence of Neutrosophic Soft Sets and A")
     print("       Decision-Making Problem in Medical Diagnosis")
     print("=====================================================")
 ##############################
