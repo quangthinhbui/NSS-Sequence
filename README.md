@@ -3,4 +3,4 @@ Authors: Quang-Thinh Bui, My-Phuong Ngo, Vaclav Snasel, Witold Pedrycz, and Bay 
 
 Paper: The Sequence of Neutrosophic Soft Sets and a Decision-Making Problem in Medical Diagnosis
 
-Journal: International Journal of Fuzzy Systems
+Journal: https://doi.org/10.1007/s40815-022-01257-4
